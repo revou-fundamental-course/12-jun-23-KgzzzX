@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Konversi Suhu</title>
+</head>
+
+<body>
+    <header>
+        <h1>Kalkulator Suhu</h1>
+    </header>
+    <div class="container">
+        <form id="calcTemp" onsubmit="calculateTemp(); return false">
+            <label for="temp">Enter the temperature to convert</label>
+            <br>
+            <input type="number" name="temp" id="temp" value="0">
+            <select name="temp_diff" id="temp_diff">
+                <option value="cel">&#176;Celsius</option>
+                <option value="fah">&#176;Fahrenheit</option>
+            </select>
+            <br>
+            <input type="submit" name="temp" id="submit">
+            <br>
+            <span id="result"></span>
+        </form>
+    </div>
+
+    <div>
+        <p class="paragraf">Suhu S dalam derajat Celcius (°C) sama dengan Suhu S dalam 5/9 kali (derajat Fahrenheit (°F) kurang 32).</p>
+        <p class="paragraf"><span class="rumus">°C = 5/9 x (°F - 32).</span></p>
+        
+        <p class="paragraf">atau</p>
+
+        <p class="paragraf">Suhu S dalam derajat Fahrenheit (°F) sama dengan Suhu S dalam (9/5 kali derajat Celcius (°C)) tambah 32.</p>
+        <p class="paragraf"><span class="rumus">°F = (9/5 x °C) + 32.</span></p>
+    </div>
+
+</body>
+
+    <script src="js/script.js"></script>
+
+</html>
